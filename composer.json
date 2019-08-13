@@ -1,0 +1,22 @@
+{
+    "name": "xorpay/sdk",
+    "description": "The Xorpay PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaohui.lam",
+            "email": "xiaohui.lam@icloud.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": ">5.0",
+        "guzzlehttp/guzzle": ">1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xorpay\\": "src/"
+        }
+    }
+}
