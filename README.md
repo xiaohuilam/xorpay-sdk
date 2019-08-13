@@ -1,9 +1,27 @@
 # Xorpay SDK
 
 ## 安装
+**依赖**
+- php 5.6 +
+- laravel 5.0 +
 
 ```bash
 composer require xorpay/sdk
+```
+
+**如果Laravel低于5.5**, 需要手工添加服务提供者和别名
+
+打开 `config/app.php`
+
+```php
+'providers' => [
+    //...
+    Xorpay\XorpayServiceProvider::class,
+],
+'aliases' => [
+    //...
+    'Xorpay' => Xorpay\Facade::class,
+],
 ```
 
 ## 配置
