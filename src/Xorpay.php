@@ -15,12 +15,12 @@ class Xorpay
      */
     public function requestPay($data, $pay_type = 'native')
     {
-        $base_string = data_get($data, 'name') . $pay_type . data_get($data, 'price') . data_get($data, 'order_id') . data_get($data, 'notify_url') . config('pay.xorpay.app_secret');
+        $base_string = data_get($data, 'name') . $pay_type . data_get($data, 'price') . data_get($data, 'order_id') . data_get($data, 'notify_url') . config('xorpay.app_secret');
         data_get($data, 'sign', md5($base_string));
         data_get($data, 'pay_type', $pay_type);
 
         $http = new Client();
-        $response = $http->post('https://xorpay.com/api/pay/' . config('pay.xorpay.aid'), [
+        $response = $http->post('https://xorpay.com/api/pay/' . config('xorpay.aid'), [
             'form_params' => Arr::only((array) $data, ['name', 'price', 'order_id', 'notify_url', 'sign', 'pay_type',]),
         ]);
 
@@ -39,7 +39,7 @@ class Xorpay
             request()->input('order_id'),
             request()->input('pay_price'),
             request()->input('pay_time'),
-            config('pay.xorpay.app_secret'),
+            config('xorpay.app_secret'),
         ];
 
         $sign = md5(join('', $data));

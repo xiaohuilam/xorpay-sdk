@@ -18,5 +18,15 @@
         "psr-4": {
             "Xorpay\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xorpay\\XorpayServiceProvider"
+            ],
+            "aliases": {
+                "Xorpay": "Xorpay\\Facade"
+            }
+        }
     }
 }
