@@ -1,5 +1,9 @@
 # Xorpay SDK
 
+[XorPay](https://xorpay.com?r=register)是提供个人微信、支付宝收款的在线工具，费率从0.9%~1.38%。[了解一下](https://xorpay.com?r=register
+)
+
+
 ## 安装
 **依赖**
 - php 5.6 +
