@@ -48,7 +48,7 @@ class Xorpay
             abort(400, 'Bad sign');
         }
 
-        call_user_func_array($success, [request()->input('order_id')]);
+        call_user_func_array($success, [request()->input('order_id'), request()->input('pay_price'), $data]);
 
         return response('ok');
     }
