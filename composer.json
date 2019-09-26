@@ -18,7 +18,8 @@
         "laravel/laravel": ">5.0",
         "xiaohuilam/laravel-test": "^0.0.1",
         "phpunit/phpunit": ">=4.0",
-        "mockery/mockery": "^1.2"
+        "mockery/mockery": "^1.2",
+        "squizlabs/php_codesniffer": "^3.4"
     },
     "autoload": {
         "psr-4": {
