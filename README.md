@@ -3,6 +3,7 @@
 [XorPay](https://xorpay.com?r=register)是提供个人微信、支付宝收款的在线工具，费率从0.9%~1.38%。[了解一下](https://xorpay.com?r=register
 )
 
+[![Build Status](https://travis-ci.org/xiaohuilam/xorpay-sdk.svg?branch=master)](https://travis-ci.org/xiaohuilam/xorpay-sdk)
 
 ## 安装
 **依赖**
