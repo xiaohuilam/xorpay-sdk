@@ -14,9 +14,20 @@
         "illuminate/support": ">5.0",
         "guzzlehttp/guzzle": ">1.0"
     },
+    "require-dev": {
+        "laravel/laravel": ">5.0",
+        "xiaohuilam/laravel-test": "^0.0.1",
+        "phpunit/phpunit": ">=4.0",
+        "mockery/mockery": "^1.2"
+    },
     "autoload": {
         "psr-4": {
             "Xorpay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xorpay\\Test\\": "tests/"
         }
     },
     "extra": {
