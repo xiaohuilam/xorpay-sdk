@@ -6,7 +6,7 @@ php:
    - '7.2'
    - '7.3'
 install:
-   - composer install -vvv
+   - COMPOSER_MEMORY_LIMIT=-1 travis_retry composer install -vvv
 script:
    - ./vendor/bin/phpcs
    - ./vendor/bin/phpunit
